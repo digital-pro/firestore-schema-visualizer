@@ -15,7 +15,8 @@ def main():
     # Initialize Firestore
     cred = credentials.ApplicationDefault()
     initialize_app(cred)
-    db = firestore.client()
+    #db = firestore.client()
+    db = firestore.Client('hs-levante-assessment-dev')
 
     # Extract schema
     print("Extracting schema...\n")
